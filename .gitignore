@@ -1,0 +1,41 @@
+# ===== 密钥 / 环境变量（务必忽略，防止泄露）=====
+.env
+.env.*
+!.env.example
+
+# ===== Python 缓存 / 编译产物 =====
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ===== 虚拟环境 =====
+.venv/
+venv/
+env/
+ENV/
+
+# ===== IDE / 编辑器 / 操作系统 =====
+.idea/
+.vscode/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+*.log
+
+# ===== 课设报告（与系统本身无关，不纳入版本管理）=====
+231210100506.docx
+231210100506.pptx
+
+# ===== 数据集（约 1.25GB / 10350 张图片，体积过大，不纳入版本管理）=====
+data/
+
+# ===== 训练产物（模型权重等二进制大文件；保留 idx_to_class.json 与图片）=====
+output/*.pdparams
+output/*.pdopt
+output/*.ckpt
+
+# ===== 内部工作区（含本地记忆等私密信息，禁止上传）=====
+.workbuddy/
